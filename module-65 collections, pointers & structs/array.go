@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func array_func() {
-	var numbers [6]int // type integer and size 6
+	// var numbers [6]int // type integer and size 6
 
-	numbers[1] = 10
+	// numbers[1] = 10
 
-	numbers[0] = 20
+	// numbers[0] = 20
 
 	// fmt.Println(numbers) // [20 10 0 0 0 0]
 
@@ -17,7 +17,13 @@ func array_func() {
 	// 	fmt.Println(numbers[i])
 	// }
 
-	var num = [6]int{10, 20, 30, 40}
+	// var num = [6]int{10, 20, 30, 40}
 
-	fmt.Println(num) // [10 20 30 40 0 0]
+	// fmt.Println(num) // [10 20 30 40 0 0]
+
+	arr := [6]string{"green", "red", "black", "blue"}
+
+	for idx, v := range arr {
+		fmt.Println(idx, v)
+	}
 }

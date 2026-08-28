@@ -26,4 +26,13 @@ func slice_func() {
 	fmt.Println("The length of the slice is: ", len(slice))
 	fmt.Println("The capacity of the slice is: ", cap(slice))
 
+	// alternative slice
+	var sl = []string{"blue"}
+	sl = append(sl, "red")
+
+	fmt.Println(sl)
+
+	fmt.Println("The length of the slice is: ", len(sl))
+	fmt.Println("The capacity of the slice is: ", cap(sl))
+
 }
