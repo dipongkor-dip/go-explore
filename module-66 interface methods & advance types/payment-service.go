@@ -43,7 +43,7 @@ func (mockPM MockPaymentMethod) pay(amount float64) {
 
 func payment_service_func() {
 	bk := Bkash{apiKey: "xyz123"}
-	// paymentService := PaymentService{} // method is requried
+	// paymentService := PaymentService{} // method is required
 	bkPaymentService := NewPaymentService(&bk)
 	bkPaymentService.checkout()
 
