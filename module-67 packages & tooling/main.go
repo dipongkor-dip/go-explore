@@ -10,8 +10,8 @@ import (
 // payment_service "learn-package-module/payment-service"
 
 func main() {
-	// type_handle_func()
-	// variadic_func()
+	type_handle_func()
+	variadic_func()
 
 	// different package handle
 	// function name first latter must be a capital letter
@@ -36,4 +36,4 @@ func main() {
 }
 
 // module = bunch of packages
-// module67-6
+// go run .
