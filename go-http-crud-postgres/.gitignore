@@ -1,0 +1,6 @@
+.env
+
+# DB_URL=postgres://user:password@localhost:5432/db_name?sslmode=disable
+
+# go build .
+# ./project-name # running compiler server

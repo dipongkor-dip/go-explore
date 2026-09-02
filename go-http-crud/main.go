@@ -82,7 +82,7 @@ func createUserHandler(w http.ResponseWriter, r *http.Request) {
 
 func getUserHandler(w http.ResponseWriter, r *http.Request) {
 
-	w.Header().Set("Content-type", "application/json")
+	w.Header().Set("Content-Type", "application/json")
 	// var urs, _ = json.Marshal(users)
 	// w.Write(urs)
 	// alternative
@@ -106,7 +106,7 @@ func getSingleUserHandler(w http.ResponseWriter, r *http.Request) {
 
 	for _, user := range users {
 		if user.Id == id {
-			w.Header().Set("Content-type", "application/json")
+			w.Header().Set("Content-Type", "application/json")
 			json.NewEncoder(w).Encode(user)
 			isFound = true
 			break
